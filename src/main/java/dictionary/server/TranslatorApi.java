@@ -13,7 +13,7 @@ public class TranslatorApi {
     /**
      * Dịch Anh - Việt
      *
-     * @param văn bản cần dịch
+     * @param text văn bản cần dịch
      * @return dịch sang tiếng Việt hoặc "lỗi" nếu có lỗi
      */
     public static String translateEnToVi(String text) {
