@@ -14,9 +14,9 @@ public class Trie {
     }
 
     /**
-     * Insert word `target` into Trie DS.
+     * Thêm`target` vào Trie.
      *
-     * @param target the word to insert
+     * @param target thêm từ
      */
     public static void insert(String target) {
         int length = target.length();
@@ -33,15 +33,14 @@ public class Trie {
             pCrawl = pCrawl.children.get(index);
         }
 
-        // Set `target` word ends at pCrawl
         pCrawl.isEndOfWord = true;
     }
 
     /**
-     * Get all words ended in the subtree of node `pCrawl`
+     * Nhận tất cả các từ kết thúc trong cây con của nút `pCrawl`
      *
-     * @param pCrawl the current node
-     * @param target the current word that `pCrawl` represents
+     * @param pCrawl nút hiện tại
+     * @param target từ hiện tại mà `pCrawl` đại diện
      */
     private static void dfsGetWordsSubtree(TrieNode pCrawl, String target) {
         if (pCrawl.isEndOfWord) {
@@ -55,10 +54,10 @@ public class Trie {
     }
 
     /**
-     * Search all words start with `prefix` in the Trie.
+     * Tìm tất c từ bắt đầu bằng `prefix` trong Trie.
      *
-     * @param prefix the prefix to search
-     * @return an ArrayList of String contains the words start with `prefix`
+     * @param prefix từ cần tìm
+     * @return một ArrayList của Chuỗi chứa các từ bắt đầu bằng `prefix`
      */
     public static ArrayList<String> search(String prefix) {
         if (prefix.isEmpty()) {
@@ -82,9 +81,9 @@ public class Trie {
     }
 
     /**
-     * Delete the word `target` from Trie DS.
+     * Xóa từ `target` từ Trie DS.
      *
-     * @param target the word to delete
+     * @param target từ cần xóa
      */
     public static void delete(String target) {
         int length = target.length();
@@ -94,25 +93,22 @@ public class Trie {
         for (int level = 0; level < length; level++) {
             char index = target.charAt(level);
             if (pCrawl.children.get(index) == null) {
-                System.out.println("This word has not been inserted");
+                System.out.println("Từ này chưa được thêm");
                 return;
             }
             pCrawl = pCrawl.children.get(index);
         }
         if (!pCrawl.isEndOfWord) {
-            System.out.println("This word has not been inserted");
+            System.out.println("Từ này chưa được thêm");
             return;
         }
 
         pCrawl.isEndOfWord = false;
     }
 
-    /** a Node on the Trie DS. */
     public static class TrieNode {
         Map<Character, TrieNode> children = new TreeMap<>();
-        /* isEndOfWord is true if the node represents the end of a word */
         boolean isEndOfWord;
-
         TrieNode() {
             isEndOfWord = false;
         }
