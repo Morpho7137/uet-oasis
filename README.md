@@ -1,65 +1,72 @@
-Application to support learning English using Java
-Author
+# English Learning Application
 
-Group Attack OOP
+## Author
 
-    Nguyen Van Thanh - 22020001
-    Nguyen Van Truong - 22020002
-    Nguyen Van Dong - 22020003
+**Group Attack OOP**
+- Nguyen Anh Kiet - 23020383
+- Pham Bao Lang - 23020391
+- Pham Trung Hieu - 23020367
 
-Description
+## Description
 
-The application is designed to support learning English. The application is written in Java and uses the JavaFX library. The application has two types of dictionaries: English-Vietnamese and Vietnamese-English.
+This application is designed to support English language learning by providing various features to assist users in improving their English proficiency. It is written in Java and utilizes the JavaFX library for its graphical interface.
 
-    The application is designed to support learning English.
-    The application is written in Java and uses the JavaFX library.
-    The application is based on the MVC model.
-    The application has two types of dictionaries: English-Vietnamese and Vietnamese-English.
-    The application use two txt files to store data.
+### Features
 
+- **Dictionary:** The application includes two main dictionaries: English-Vietnamese and Vietnamese-English, allowing users to easily look up words and their meanings in both languages.
+- **MVC Architecture:** Built upon the Model-View-Controller architecture, the application ensures a clear separation of concerns, making it easier to maintain and extend.
+- **Data Persistence:** User data is stored in simple text files, enabling users to modify and expand the dictionary content as needed.
 
-Installation
+## Installation
 
-    Clone the project from the repository.
-    Open the project in the IDE.
-    Run the project.
-    If you want to change the data, you can change the content in the txt files.
+1. Clone the project from the repository using Git.
+2. Open the project in your preferred Integrated Development Environment (IDE) that supports Java.
+3. Compile and run the project within the IDE environment.
+4. Optionally, users can customize the dictionary content by modifying the text files provided.
 
-Usage
-  
-    To search, you can choose between searching for English words or searching for Vietnamese words. Find the word you want and click the Search button, then the text area below will display the meaning of the word.
-    To add a new word, first choose the kind of word you want to add. then type the word in the small text field below and its explaination in the text area, after that, click the Add button.
-    To delete a word, first choose the kind of word you want to delete. Then click the Delete button. (Highly recommend you to search for the word first in the large text field before clicking the Delete button)
-    To edit a word, first choose the kind of word that you want to edit. Then click the Edit button. (Highly recommend you to search for the word first in the large text field before clicking the Edit button)
-    To use the online translate function, first choose what kind of translation you want, from English to Vietnamese or from Vietnamese to English. Then type what you want to be translated in the left window and press the translate button (arrow icon) or Enter. The translated version of what you typed will be displayed in the right window. (Make sure you have the Internet connected)
-    Any changes to the data of the dictionary will be AUTO SAVED, so be careful, there is no ctrl + Z for you to use 💀.(I don't even know why I make my app like this, but I ran out of time anyway.)
-    To pronounce the word, click the Pronounce button (Speaker icon).
-    To practice, click the Practice button (Play icon), then the application will display a Game window.
-        In the Game window, click the Start button to start the game.
-        The application will display a word that is removed some letters, you need to enter the complete version of the word to get a point. (If you wonder why you have to type the whole word instead of removed letters, that is because do it like this will be easier to code. sorry for the inconvenient ≧﹏≦ 🙏! . But just think this is just a way to help you develope the skill of quickly typing english word.) 
-        If the answer is correct, the application will display a new word and increase the score by 1.
-        If the answer is incorrect, the message 'Wrong answer' will be displayed, and you have to provide the correct answer in order for the app to display a new word. (No luck in my game. It's all skill! Don't expect to skip the hard words and then complete the easy ones for points p(╬ Ò ‸ Ó)q )
-        To end the game, click the End button.
-        To play again, click the Re Play again button (Re Play icon).
-        Your score will be auto saved.
-    To exit the application, click the Exit button (Cross icon).
+## Usage
 
-Demo
+### Search
+Users can search for words in either English or Vietnamese. The application provides a user-friendly interface to quickly find word meanings and translations.
 
+### Add/Edit/Delete
+- Users have the ability to add new words, edit existing entries, or delete unwanted entries from the dictionaries.
+- There is a small text field for typing the word that will be added/edited/deleted.
+- Users are highly recmmended to search for the word frst, using the big text field above for searching.
 
-Future improvements
+### Online Translation
+Utilizing online translation services, the application offers a convenient way to translate text between English and Vietnamese. Users can input text and receive instant translations within the application.
 
-    Add more dictionaries.
-    Add more complex games.
-    Optimize the word lookup algorithm.
-    Use a database to store data.
-    Integrate the application with API of Google Speech to Text to convert speech to text.
-    Make the UI look cuter.
+### Auto Save
+Any modifications made to the dictionary data are automatically saved, ensuring that users' changes are preserved even if the application is closed unexpectedly. However, this means any modifications cannot be undone.
 
-Contributing
+### Pronunciation
+The application includes a pronunciation feature that allows users to listen to the correct pronunciation of words.
 
-I'm not gonna use this app in the future. So, do anything you want with it, I won't care anyways.
+### Practice Game
+A built-in practice game helps users reinforce their vocabulary skills. The game presents users with partially obscured words, challenging them to complete the word correctly within a time limit.
+- The game encourages users to type the full word instead of just the missing letters, promoting better learning and typing skills.
+- Points are awarded for correct answers, and users must provide the correct answer to progress to the next word.
+- The game emphasizes skill over luck, discouraging users from skipping difficult words for easier ones to earn points.
+- Users can replay the game to improve their scores and enhance their vocabulary retention.
+- High scores are automatically saved for future reference.
 
-The project is completed.
-Notes
-The application is written for educational purposes.
+### Exit
+To exit the application, users can simply click the provided Exit button to close the application.
+
+## Future Improvements
+
+- **Expand Dictionaries:** Add support for additional languages and specialized vocabularies to cater to a broader audience.
+- **Enhanced Games:** Introduce more interactive and engaging games to make learning English fun and immersive.
+- **Algorithm Optimization:** Improve the efficiency of word lookup algorithms to enhance the application's performance, especially with large dictionaries.
+- **Database Integration:** Transition from text files to a more robust database system for improved data management and scalability.
+- **Speech-to-Text Integration:** Integrate with APIs such as Google Speech to Text to enable users to practice pronunciation and speaking skills.
+- **UI Enhancements:** Enhance the user interface design to make the application more visually appealing and user-friendly.
+
+## Contributing
+
+Feel free to contribute to the project by providing feedback, reporting issues, or submitting pull requests. Your contributions are highly appreciated!
+
+## Notes
+
+The application is developed solely for educational purposes, aiming to assist users in learning English effectively and efficiently.
