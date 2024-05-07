@@ -31,6 +31,7 @@ Users can search for words in either English or Vietnamese. The application prov
 
 ### Add/Edit/Delete
 - Users have the ability to add new words, edit existing entries, or delete unwanted entries from the dictionaries.
+- Users must choose the kind of word that they want to modify.
 - There is a small text field for typing the word that will be added/edited/deleted.
 - Users are highly recmmended to search for the word frst, using the big text field above for searching.
 
