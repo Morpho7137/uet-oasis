@@ -28,7 +28,7 @@ public class TranslatorApi {
     /**
      * Dịch Việt - Anh
      *
-     * @param văn bản cần dịch
+     * @param text văn bản cần dịch
      * @return dịch sang tiếng Anh hoặc "lỗi" nếu có lỗi
      */
     public static String translateViToEn(String text) {
@@ -37,7 +37,7 @@ public class TranslatorApi {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "500";
+        return "lỗi";
     }
 
     /**
@@ -45,7 +45,7 @@ public class TranslatorApi {
      *
      * @param langFrom ngôn ngữ vào
      * @param langTo ngôn ngữ ra
-     * @param văn bản cần dịch
+     * @param text văn bản cần dịch
      * @return dịch sang"langTo"
      */
     private static String translate(String langFrom, String langTo, String text)
