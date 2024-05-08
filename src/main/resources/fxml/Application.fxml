@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="anchorPane" prefHeight="580.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.controller.Application">
+    <TextField fx:id="inputText" layoutX="31.0" layoutY="28.0" onAction="#lookUpWord" onKeyPressed="#changeFocusDown" onKeyTyped="#prepareSearchList" prefHeight="53.0" prefWidth="243.0" promptText="Search...">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </TextField>
+    <ListView fx:id="searchList" layoutX="32.0" layoutY="97.0" onKeyPressed="#selectWord" onMouseClicked="#selectWordDoubleClick" prefHeight="456.0" prefWidth="242.0" />
+    <WebView fx:id="webView" fontScale="1.2" layoutX="312.0" layoutY="97.0" prefHeight="456.0" prefWidth="490.0" />
+    <Button fx:id="addWordButton" alignment="CENTER" layoutX="300.0" layoutY="29.0" mnemonicParsing="false" onAction="#addingWord" prefHeight="51.0" prefWidth="102.0" text="Thêm" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/add-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="exportButton" alignment="CENTER" layoutX="817.0" layoutY="97.0" mnemonicParsing="false" onAction="#exportToFile" prefHeight="51.0" prefWidth="102.0" text="Xuất" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/export-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="pronounceButton" alignment="CENTER" layoutX="669.0" layoutY="30.0" mnemonicParsing="false" onAction="#playSound" prefHeight="51.0" prefWidth="102.0" text="Phát âm" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/pronounce-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="editButton" alignment="CENTER" layoutX="542.0" layoutY="30.0" mnemonicParsing="false" onAction="#editWordDefinition" prefHeight="51.0" prefWidth="102.0" text="Sửa" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/edit-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="deleteButton" alignment="CENTER" layoutX="425.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteWord" prefHeight="51.0" prefWidth="102.0" text="Xoá" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/delete-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="googleButton" alignment="CENTER" layoutX="802.0" layoutY="499.0" mnemonicParsing="false" onAction="#changeToSentencesTranslating" prefHeight="53.0" prefWidth="131.0" text="  Google  Translate" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font size="14.0" />
+        </font>
+      <graphic>
+         <ImageView fitHeight="35.0" fitWidth="31.0">
+            <image>
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/google-icon.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </Button>
+</AnchorPane>
