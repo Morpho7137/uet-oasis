@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.web.WebView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
 
-<AnchorPane id="anchorPane" prefHeight="580.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.controller.Application">
+<AnchorPane id="anchorPane" prefHeight="580.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.controller.Application">
     <TextField fx:id="inputText" layoutX="31.0" layoutY="28.0" onAction="#lookUpWord" onKeyPressed="#changeFocusDown" onKeyTyped="#prepareSearchList" prefHeight="53.0" prefWidth="243.0" promptText="Tìm kiếm...">
         <font>
             <Font size="14.0" />
@@ -25,18 +22,6 @@
          <ImageView fitHeight="35.0" fitWidth="31.0">
             <image>
                <Image url="@../../../../../uet-oasis/src/main/resources/icon/add-icon.png" />
-            </image>
-         </ImageView>
-      </graphic>
-    </Button>
-    <Button fx:id="exportButton" alignment="CENTER" layoutX="817.0" layoutY="97.0" mnemonicParsing="false" onAction="#exportToFile" prefHeight="51.0" prefWidth="102.0" text="Xuất" textAlignment="CENTER" wrapText="true">
-        <font>
-            <Font size="14.0" />
-        </font>
-      <graphic>
-         <ImageView fitHeight="35.0" fitWidth="31.0">
-            <image>
-               <Image url="@../../../../../uet-oasis/src/main/resources/icon/export-icon.png" />
             </image>
          </ImageView>
       </graphic>
