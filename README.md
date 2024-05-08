@@ -14,7 +14,6 @@ This application is designed to support English language learning by providing v
 ### Features
 
 - **Dictionary:** The application includes two main dictionaries: English-Vietnamese and Vietnamese-English, allowing users to easily look up words and their meanings in both languages.
-- **MVC Architecture:** Built upon the Model-View-Controller architecture, the application ensures a clear separation of concerns, making it easier to maintain and extend.
 - **Data Persistence:** User data is stored in simple text files, enabling users to modify and expand the dictionary content as needed.
 
 ## Installation
