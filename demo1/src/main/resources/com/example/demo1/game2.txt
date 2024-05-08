@@ -1,8 +1,0 @@
-psy__atry   psychiatry
-soci__ogy   sociology
-__ilosophy  philosophy
-poli__cs    politics
-__thology   mythology
-arch__logy  archaeology
-bi__ogy     biology
-__ysics     physics
