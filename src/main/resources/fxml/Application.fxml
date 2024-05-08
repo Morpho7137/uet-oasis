@@ -89,11 +89,11 @@
          </ImageView>
       </graphic>
     </Button>
-   <Button layoutX="788.0" layoutY="30.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="102.0">
+   <Button layoutX="789.0" layoutY="30.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="102.0">
       <graphic>
-         <ImageView fitHeight="43.0" fitWidth="44.0">
+         <ImageView fitHeight="41.0" fitWidth="51.0">
             <image>
-               <Image url="@../icon/game-icon.png" />
+               <Image url="@../../../../../uet-oasis/src/main/resources/icon/game-icon.png" />
             </image>
          </ImageView>
       </graphic>
